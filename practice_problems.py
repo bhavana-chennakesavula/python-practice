@@ -58,3 +58,55 @@ if age>= 18:
     print(f'you are an adult, {name}')
 else:
     print(f'you are a minor, {name}')
+    
+    
+# Problem 8: You received "         bhavana CHENNAKESAVULa          " from a form: Clean it and print: first name, last name, full name in title case, and total characters in full name (without spaces).
+    
+name = "         bhavana CHENNAKESAVULa          "
+full_name = name.strip()
+clean_name = full_name.split()
+print(clean_name[0])
+print(clean_name[1])
+print(full_name.title())
+print(len(full_name))
+
+
+
+# Problem 9: A product price came in as "INR 2,500.00". Extract just the number, remove the comma, convert to float, apply 18% GST and print the final price with 2 decimal places.
+
+cost = "INR2,500.00"
+price = cost[3: ]
+clean_price = price.replace(",","")
+pprice = float(clean_price)
+price_after_GST = pprice * 1.18
+print(f"{price_after_GST:.2f}")
+
+
+
+# Problem 10: You have this string: "2026-06-10". Extract and print: Year, Month, Day Using slicing only. No split().
+
+date = "2026-06-10"
+print("year: "+ date[0:4])
+print("month: "+ date[5:7])
+print("Date: "+ date[8: ])
+
+
+
+# Problem 11: You received a CSV row as a string: "Bhavana,23,Ongole,Data Analyst". Split it and print each value on a separate line with a label like: Name: Bhavana   Age: 23     City: Ongole    Role: Data Analyst
+
+string = "Bhavana,23,Ongole,Data Analyst"
+final_string = string.split(",")
+print("Name: "+ final_string[0])
+print("Age: "+ final_string[1])
+print("City: "+ final_string[2])
+print("Role: "+ final_string[3])
+
+
+
+# Problem 12: Ask the user to enter a sentence. Print: The sentence in uppercase, Total number of characters, The sentence with all spaces removed, The first 10 characters only
+
+sentence = input("enter a sentence: ")
+print(sentence.upper())
+print(len(sentence))
+print(sentence.replace(" ", ""))
+print(sentence[0:11])
