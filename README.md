@@ -1,2 +1,2 @@
 # python-practice
-My Python learning projects
+Documenting my Python learning journey through daily practice, problem-solving, and projects.
