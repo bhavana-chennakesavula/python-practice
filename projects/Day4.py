@@ -1,0 +1,10 @@
+sales = [1200, 2300, 4500, 6700, 8900, 2100, 4300]
+print(sales)
+highest = max(sales)
+print(f"Highest sale: {highest}")
+lowest = min(sales)
+print(f"Lowest sale: {lowest}")
+total = sum(sales)
+print(f"Total sales: {total}")
+average = total / len(sales)
+print(f"Average daily sale: {average}")
