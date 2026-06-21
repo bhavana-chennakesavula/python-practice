@@ -21,4 +21,10 @@ count = 0
 for sale in daily_sales:
     if sale < 2000:
         count += 1
-print(f"Days with low sales: {count}")
+print(f"Days with low sales: {count}") 
+departments = ["Sales", "Analytics", "Engineering"]
+employees =   [4, 6, 8]
+# For each department, print the department name and then print "Employee [n]" for each employee in that department.
+for department in departments:
+    print(f"{department}: ")
+
